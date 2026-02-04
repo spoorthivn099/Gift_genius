@@ -1,166 +1,90 @@
-/* Reset */
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Segoe UI', sans-serif;
 }
 
-/* Body */
 body {
-  min-height: 100vh;
-  background: linear-gradient(135deg, #fbc2eb, #a6c1ee);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 0;
+  background: #f7f7f7;
   padding: 20px;
 }
 
-/* App Container */
-.app-container {
-  background: #ffffff;
-  width: 100%;
-  max-width: 420px;
-  border-radius: 20px;
-  padding: 25px;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+.hero {
   text-align: center;
+  margin-bottom: 40px;
 }
 
-/* Headings */
-h1 {
-  font-size: 2rem;
-  color: #333;
-  margin-bottom: 5px;
+.hero h1 {
+  font-size: 2.4rem;
+  font-weight: 800;
 }
 
-.tagline {
-  font-size: 0.9rem;
-  color: #777;
-  margin-bottom: 20px;
-}
-
-/* Form */
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  text-align: left;
-}
-
-label {
-  font-size: 0.8rem;
+.hero p {
   color: #555;
+  font-size: 1.1rem;
 }
 
-select,
-input {
-  padding: 10px;
+.card {
+  max-width: 420px;
+  margin: auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  margin-bottom: 30px;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 12px;
+  margin-top: 12px;
   border-radius: 10px;
   border: 1px solid #ddd;
-  font-size: 0.9rem;
-  outline: none;
 }
 
-select:focus,
-input:focus {
-  border-color: #a6c1ee;
+textarea {
+  height: 80px;
 }
 
-/* Button */
 button {
+  width: 100%;
   margin-top: 15px;
   padding: 12px;
   border: none;
   border-radius: 12px;
-  background: linear-gradient(135deg, #a18cd1, #fbc2eb);
+  background: #111;
   color: #fff;
   font-size: 1rem;
-  font-weight: 600;
   cursor: pointer;
-  transition: all 0.3s ease;
 }
 
 button:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  opacity: 0.9;
 }
 
-/* Paywall */
-#paywall-section h2 {
-  margin-bottom: 10px;
+.hidden {
+  display: none;
 }
 
-#paywall-section p {
-  font-size: 0.9rem;
-  color: #555;
-  margin-bottom: 10px;
-}
-
-#paywall-section ul {
-  list-style: none;
-  text-align: left;
-  margin: 15px 0;
-}
-
-#paywall-section ul li {
-  font-size: 0.85rem;
-  margin-bottom: 6px;
-}
-
-#paywall-section h3 {
-  margin: 15px 0;
-  color: #333;
-}
-
-.trust-text {
-  font-size: 0.7rem;
-  color: #999;
-  margin-top: 8px;
-}
-
-/* Gift Cards */
-.gift-card {
-  background: #f9f9ff;
-  border-radius: 15px;
+.qr-box {
+  background: #f0f0f0;
   padding: 15px;
+  border-radius: 12px;
   margin-top: 15px;
-  text-align: left;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08);
-  animation: fadeIn 0.5s ease;
+  text-align: center;
 }
 
-.gift-card h3 {
-  font-size: 1rem;
-  margin-bottom: 5px;
+.fake-qr {
+  margin-top: 10px;
+  padding: 25px;
+  background: #ddd;
+  border-radius: 8px;
+  font-weight: bold;
 }
 
-.gift-card p {
-  font-size: 0.85rem;
-  color: #555;
-  margin-bottom: 5px;
-}
-
-.gift-card span {
-  font-size: 0.75rem;
-  color: #888;
-}
-
-/* Footer */
-.footer {
-  font-size: 0.7rem;
-  color: #aaa;
-  margin-top: 20px;
-}
-
-/* Animation */
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
+.quote {
+  margin-top: 25px;
+  font-style: italic;
+  color: #444;
+  text-align: center;
 }
