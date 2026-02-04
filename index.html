@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gift Genius</title>
+
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- APP CONTAINER -->
+  <div class="app-container">
+
+    <!-- HEADER -->
+    <h1>🎁 Gift Genius</h1>
+    <p class="tagline">Smart gifts. Zero stress.</p>
+
+    <!-- FORM SECTION -->
+    <div id="form-section">
+      <form id="giftForm">
+
+        <label>Occasion</label>
+        <select required>
+          <option value="">Select occasion</option>
+          <option>Birthday</option>
+          <option>Anniversary</option>
+          <option>Festival</option>
+          <option>Surprise</option>
+        </select>
+
+        <label>Relationship</label>
+        <select required>
+          <option value="">Select relationship</option>
+          <option>Friend</option>
+          <option>Partner</option>
+          <option>Parent</option>
+          <option>Sibling</option>
+          <option>Colleague</option>
+        </select>
+
+        <label>Age Range</label>
+        <select required>
+          <option value="">Select age</option>
+          <option>Below 18</option>
+          <option>18 – 25</option>
+          <option>26 – 35</option>
+          <option>36 – 50</option>
+          <option>50+</option>
+        </select>
+
+        <label>Budget</label>
+        <select required>
+          <option value="">Select budget</option>
+          <option>Under ₹500</option>
+          <option>₹500 – ₹1000</option>
+          <option>₹1000 – ₹3000</option>
+          <option>Above ₹3000</option>
+        </select>
+
+        <label>Interests</label>
+        <input type="text" placeholder="Music, art, travel, fitness..." />
+
+        <label>Favorite Flower (optional)</label>
+        <input type="text" placeholder="Rose, Lily, Tulip..." />
+
+        <button type="submit">Find My Gift ✨</button>
+
+      </form>
+    </div>
+
+    <!-- PAYWALL SECTION -->
+    <div id="paywall-section" style="display:none;">
+      <h2>Your Perfect Gift Is Ready 🎁</h2>
+      <p>Unlock it in just one tap</p>
+
+      <ul>
+        <li>🌸 Aesthetic personalized gifts</li>
+        <li>🎧 Trending Gen-Z gift ideas</li>
+        <li>💌 Custom message & note</li>
+        <li>⏱️ Save hours of overthinking</li>
+      </ul>
+
+      <h3>Just ₹49 — less than a coffee ☕</h3>
+
+      <button id="unlockBtn">Unlock My Gift Ideas ✨</button>
+      <p class="trust-text">One-time payment. No ads. No spam.</p>
+    </div>
+
+    <!-- RESULTS SECTION -->
+    <div id="result-section" style="display:none;">
+      <h2>Your Gift Suggestions 🎉</h2>
+
+      <div class="gift-card">
+        <h3>🌷 Personalized Flower Bouquet</h3>
+        <p>A pastel-wrapped bouquet of their favorite flower.</p>
+        <span>Vibe: Aesthetic & Romantic</span>
+        <p>Price: ₹899</p>
+      </div>
+
+      <div class="gift-card">
+        <h3>🎧 Spotify Playlist Card</h3>
+        <p>A custom playlist that matches their mood.</p>
+        <span>Vibe: Gen-Z Trendy</span>
+        <p>Price: ₹299</p>
+      </div>
+
+      <div class="gift-card">
+        <h3>📸 LED Photo Clips</h3>
+        <p>Turn memories into aesthetic room décor.</p>
+        <span>Vibe: Cozy & Cute</span>
+        <p>Price: ₹499</p>
+      </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <p class="footer">Made with ❤️ by Gift Genius</p>
+
+  </div>
+
+  <!-- Link JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
